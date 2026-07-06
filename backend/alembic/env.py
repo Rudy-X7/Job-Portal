@@ -2,11 +2,12 @@ from app.database.database import Base
 from app.models.user import User
 from app.models.resume import Resume
 from logging.config import fileConfig
+from app.models.skill import Skill
 
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
 
-
+from app.models.job import Job
 from alembic import context
 
 # this is the Alembic Config object, which provides
