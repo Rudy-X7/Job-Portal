@@ -6,6 +6,7 @@ from app.api.users.profile import router as profile_router
 from app.api.users.resume import router as resume_router
 from app.api.skills import router as skills_router
 from app.api.jobs import router as jobs_router
+from app.api.applications import router as applications_router
 
 
 # Create FastAPI application FIRST
@@ -49,6 +50,11 @@ app.include_router(
     jobs_router,
     prefix="/jobs",
     tags=["Jobs"]
+)
+app.include_router(
+    applications_router,
+    prefix="/applications",
+    tags=["Applications"]
 )
 
 @app.get("/")
