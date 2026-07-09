@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-
+from fastapi.middleware.cors import CORSMiddleware
 from app.api.auth.signup import router as signup_router
 from app.api.auth.login import router as login_router
 from app.api.users.profile import router as profile_router
@@ -9,9 +9,20 @@ from app.api.jobs import router as jobs_router
 from app.api.applications import router as applications_router
 
 
+
 # Create FastAPI application FIRST
 app = FastAPI(
     title="Job Portal API"
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 

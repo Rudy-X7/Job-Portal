@@ -147,7 +147,7 @@ def delete_resume(
             detail="Resume not found"
         )
 
-        was_default = resume.is_default
+    was_default = resume.is_default
     file_path = resume.file_path
 
     db.delete(resume)
