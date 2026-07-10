@@ -10,6 +10,13 @@ The application supports two roles:
 -   **Admin** --- manage jobs and skills, review applications by job,
     and update candidate application status.
 
+## Live Demo
+
+- **Live Application:** [Open Job Portal](https://job-portal-fcic.onrender.com)
+- **API Documentation:** [Open Swagger UI](https://job-portal-api-ifn8.onrender.com/docs)
+- **Source Code:** [GitHub Repository](https://github.com/Rudy-X7/Job-Portal)
+
+> The backend is hosted on a free-tier service and may take a short time to wake up after inactivity.
 ## Features
 
 ### Authentication and Authorization
